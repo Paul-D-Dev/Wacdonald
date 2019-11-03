@@ -1,0 +1,21 @@
+h1 {
+  font-size : 32px;
+  padding: 0;
+}
+
+.grid-menu{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: (repeat(2,1fr));
+
+}
+
+.menu {
+  text-align: center;
+  place-self: center;
+  height: 150px;
+  width: 150px;
+  background-color: #f8f8f6;
+  border-radius: 15px;
+
+}

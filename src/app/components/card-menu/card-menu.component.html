@@ -1,1 +1,10 @@
-<p>card-menu works!</p>
+<h1>Hey,</h1>
+<p>what's up ?</p>
+
+<div class="grid-menu">
+  <div class="menu" *ngFor="let card of cardMenu">
+    <img [src]="card.image" alt="food">
+    <p>{{card.title}}</p>
+    <div>{{card.price}}</div>
+  </div>
+</div>

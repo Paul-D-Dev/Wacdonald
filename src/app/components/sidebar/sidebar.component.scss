@@ -1,0 +1,43 @@
+:host {
+  display : flex;
+  flex-direction: column;
+  position : fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 115px;
+  background-color: #fbfbf9;
+}
+
+.country {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: red;
+  align-self: flex-end;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.order {
+  text-align: center;
+}
+
+.card {
+
+}
+
+img{
+  height: 30px;
+  width: 30px;
+}
+
+button {
+  background-color: #ffca40;
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  border: 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
