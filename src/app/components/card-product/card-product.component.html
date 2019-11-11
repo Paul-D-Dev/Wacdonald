@@ -1,1 +1,8 @@
-<p>card-product works!</p>
+<h1>Popular</h1>
+<div class="grid-products">
+  <div class="product" *ngFor="let product of products">
+    <img [src]="'../../../assets/icons/' + product.icon" alt="food">
+    <p>{{product.name}}</p>
+    <p>{{product.price}}</p>
+  </div>
+</div>

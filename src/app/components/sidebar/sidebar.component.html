@@ -1,27 +1,27 @@
-<div class="country"></div>
-<h2>My Order</h2>
-<p>Take out</p>
-<hr>
-<div class="order">
-  <div class="card">
-    <img src="../../../assets/icons/burger.svg" alt="food">
-    <p>title</p>
-    <p>price</p>
-    <p>number</p>
+<div class="top">
+  <div class="country"></div>
+  <div class="title">
+    <h2>My </h2>
+    <h2>Order </h2>
+    <h3>Take out</h3>
   </div>
-  <div class="card">
-    <img src="../../../assets/icons/burger.svg" alt="food">
-    <p>title</p>
-    <p>price</p>
-    <p>number</p>
-  </div>
-  <div class="card">
-    <img src="../../../assets/icons/burger.svg" alt="food">
-    <p>title</p>
-    <p>price</p>
-    <p>number</p>
-  </div>
+</div>
+<div class="cart">
+  <div class="cart-item" *ngFor="let item of cart">
+    <img [src]="'../../../assets/icons/' + item.icon" alt="icon {{item.name}}">
+    <ul>
+      <li>{{item.name}} </li>
+      <li>$ {{item.price}} </li>
+    </ul>
+    <div class="number">
+      <button class="minus" (click)="sousProduct()">-</button>
+      <p>{{count}}</p>
+      <button class="add" (click)="addProduct()">+</button>
+    </div>
+   </div>
+</div>
+<div class="checkout">
   <p>Total</p>
   <h2>$13.86</h2>
-  <button>Done</button>
+  <button type="submit" class="submit-btn">Done</button>
 </div>

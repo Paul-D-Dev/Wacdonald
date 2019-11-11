@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Food } from 'src/app/models/food';
 
 @Component({
-  selector: 'app-sidebar',
-  templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.scss']
+  selector: 'app-cart',
+  templateUrl: './cart.component.html',
+  styleUrls: ['./cart.component.scss']
 })
-export class SidebarComponent implements OnInit {
+export class CartComponent implements OnInit {
 
   cart: Food[] = [
     {

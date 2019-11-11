@@ -1,10 +1,12 @@
-<h1>Hey,</h1>
-<p>what's up ?</p>
+<div class="title">
+  <h1>Hey,</h1>
+  <p>what's up ?</p>
+</div>
 
 <div class="grid-menu">
-  <div class="menu" *ngFor="let card of cardMenu">
-    <img [src]="card.image" alt="food">
-    <p>{{card.title}}</p>
-    <div>{{card.price}}</div>
+  <div class="menu" *ngFor="let menu of menus">
+    <img [src]="'../../../assets/icons/' + menu.icon" alt="food">
+    <p>{{menu.name}}</p>
+    <p>{{menu.promo}}</p>
   </div>
 </div>

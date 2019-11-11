@@ -1,3 +1,15 @@
+:host{
+  margin: 0 10%;
+}
+
+.title {
+  margin-bottom: 10%;
+}
+
+.title p {
+  font-size: 1.5em;
+}
+
 h1 {
   font-size : 32px;
   padding: 0;
@@ -7,15 +19,25 @@ h1 {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: (repeat(2,1fr));
-
 }
 
 .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   text-align: center;
-  place-self: center;
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100%;
   background-color: #f8f8f6;
   border-radius: 15px;
+}
 
+img {
+  width: 40%;
+}
+
+.grid-menu p {
+  font-size: 0.6em;
+  font-weight: bold;
 }

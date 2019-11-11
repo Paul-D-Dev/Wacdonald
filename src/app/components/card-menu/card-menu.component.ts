@@ -1,4 +1,7 @@
+import { MenusService } from './../../services/menus.service';
 import { Component, OnInit } from '@angular/core';
+import { Food } from 'src/app/models/food';
+
 
 @Component({
   selector: 'app-card-menu',
@@ -7,43 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardMenuComponent implements OnInit {
 
-  cardMenu = [
-    {
-      image : '../../../assets/icons/burger.svg',
-      title : 'Combo Meal',
-      price : 3,
-    },
-    {
-      image : '../../../assets/icons/burger.svg',
-      title : 'Burgers & Sandwiches',
-      price : 3,
-    },
-    {
-      image : '../../../assets/icons/birthday-cake.svg',
-      title : 'Happy Meal',
-      price : 3,
-    },
-    {
-      image : '../../../assets/icons/burger.svg',
-      title : 'Beverages',
-      price : 3,
-    },
-    {
-      image : '../../../assets/icons/chicken-leg.svg',
-      title : 'Chicken',
-      price : 3,
-    },
-    {
-      image : '../../../assets/icons/french-fries.svg',
-      title : 'Snack & Sides',
-      price : 3,
-    },
-
-  ];
-
-  constructor() { }
+  menus: Food[] ;
+  constructor(private menusService: MenusService) { }
 
   ngOnInit() {
+    this.menus = this.menusService.filterMenus();
   }
+
+
 
 }

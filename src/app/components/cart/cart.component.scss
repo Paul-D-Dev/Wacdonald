@@ -1,0 +1,37 @@
+.cart {
+  padding-top: 10%;
+}
+
+img{
+  height: 30px;
+  width: 30px;
+}
+
+p, li{
+  font-size: 0.8em;
+}
+
+
+.number {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+button{
+  margin: 0 10%;
+  width: 20%;
+  border-radius: 30%;
+  border: none;
+}
+
+.minus{
+  background-color: transparent;
+  border: 1px solid gray;
+  font-size: 0.8em;
+}
+
+.add {
+  background-color: #ffca40;
+  font-size: 0.8em;
+}

@@ -1,0 +1,12 @@
+<div class="cart" *ngFor="let item of cart">
+  <img [src]="'../../../assets/icons/' + item.icon" alt="icon {{item.name}}">
+  <ul>
+    <li>{{item.name}} </li>
+    <li>$ {{item.price}} </li>
+  </ul>
+  <div class="number">
+    <button class="minus" (click)="sousProduct()">-</button>
+    <p>{{count}}</p>
+    <button class="add" (click)="addProduct()">+</button>
+  </div>
+</div>
