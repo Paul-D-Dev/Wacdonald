@@ -7,21 +7,21 @@
   </div>
 </div>
 <div class="cart">
-  <div class="cart-item" *ngFor="let item of cart">
+  <div class="cart-item" *ngFor="let item of cart index as i">
     <img [src]="'../../../assets/icons/' + item.icon" alt="icon {{item.name}}">
     <ul>
       <li>{{item.name}} </li>
       <li>$ {{item.price}} </li>
     </ul>
     <div class="number">
-      <button class="minus" (click)="sousProduct()">-</button>
-      <p>{{count}}</p>
-      <button class="add" (click)="addProduct()">+</button>
+      <button class="minus" (click)="minusProduct(item, i)">-</button>
+      <p>{{item.number}}</p>
+      <button class="add" (click)="addProduct(item, i)">+</button>
     </div>
    </div>
 </div>
 <div class="checkout">
   <p>Total</p>
-  <h2>$13.86</h2>
+  <h2>{{totalOrder()}}</h2>
   <button type="submit" class="submit-btn">Done</button>
 </div>

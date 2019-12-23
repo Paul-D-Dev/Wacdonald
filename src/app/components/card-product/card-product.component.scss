@@ -10,7 +10,7 @@
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  height: 100px;
+  height: 90px;
   width: 100%;
   background-color: #f8f8f6;
   border-radius: 15px;
@@ -23,4 +23,8 @@ img {
 .grid-products p {
   font-size: 0.6em;
   font-weight: bold;
+}
+
+.price {
+  color : #ffca40;
 }

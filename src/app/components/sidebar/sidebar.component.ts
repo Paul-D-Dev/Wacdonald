@@ -38,20 +38,31 @@ export class SidebarComponent implements OnInit {
   }
   ];
 
-  count = 0;
   constructor() { }
 
   ngOnInit() {
+
   }
 
-  sousProduct() {
-    if (this.count > 0) {
-      return this.count--;
-    } else {
-      return;
+  minusProduct(product, i) {
+    if (this.cart[i].number > 0) {
+      this.totalOrder();
+      return this.cart[i].number--;
+    } else if (this.cart[i].number === 0) {
+      return this.cart.splice(this.cart.findIndex(() => product.id === this.cart[i].id ), 1);
+    }
+
+  }
+  addProduct(product, i) {
+    this.totalOrder();
+    return this.cart[i].number++;
+  }
+
+  totalOrder() {
+    let sum = 0;
+    for (const product of this.cart) {
+        sum +=  product.price * product.number;
+      }
+    return `$ ${sum}`;
     }
   }
-  addProduct() {
-    return this.count++;
-  }
-}
