@@ -1,5 +1,6 @@
+import { CartService } from './../../services/cart.service';
 import { ProductsService } from './../../services/products.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Food } from 'src/app/models/food';
 
 @Component({
@@ -9,11 +10,16 @@ import { Food } from 'src/app/models/food';
 })
 export class CardProductComponent implements OnInit {
 
+  add: Food;
   products: Food[];
-  constructor(private productsService: ProductsService) { }
+  constructor(private productsService: ProductsService,
+              private cartService: CartService) { }
 
   ngOnInit() {
     this.products = this.productsService.filterProducts();
   }
 
+  addProductToCart(product) {
+    this.cartService.cart.push({...product});
+  }
 }

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { CartService } from './../../services/cart.service';
+import { Component, OnInit, Input } from '@angular/core';
 import { Food } from 'src/app/models/food';
 
 @Component({
@@ -8,40 +9,12 @@ import { Food } from 'src/app/models/food';
 })
 export class SidebarComponent implements OnInit {
 
-  cart: Food[] = [
-    {
-      id: 10,
-      name: 'Crispy Chicken',
-      promo: null,
-      price: 2,
-      icon: 'chicken-leg.svg',
-      cat: 'menu',
-      number: 0,
-  },
-  {
-      id: 11,
-      name: 'Sausage sausage',
-      promo: null,
-      price: 4,
-      icon: 'birthday-cake.svg',
-      cat: 'product',
-      number: 0,
-  },
-  {
-      id: 12,
-      name: 'Filet-o-Fish',
-      promo: null,
-      price: 4,
-      icon: 'roast-chicken.svg',
-      cat: 'product',
-      number: 0,
-  }
-  ];
+  cart: Food[];
 
-  constructor() { }
+  constructor(private cartService: CartService) { }
 
   ngOnInit() {
-
+    this.cart = this.cartService.cart;
   }
 
   minusProduct(product, i) {
@@ -65,4 +38,5 @@ export class SidebarComponent implements OnInit {
       }
     return `$ ${sum}`;
     }
+
   }

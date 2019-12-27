@@ -1,6 +1,6 @@
 <h1>Popular</h1>
 <div class="grid-products">
-  <div class="product" *ngFor="let product of products">
+  <div class="product" *ngFor="let product of products" (click)=addProductToCart(product)>
     <img [src]="'../../../assets/icons/' + product.icon" alt="food">
     <p>{{product.name}}</p>
     <p class="price">$ {{product.price}}</p>
