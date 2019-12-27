@@ -10,7 +10,7 @@ export const foods: Food[] =
       price: 4.5,
       icon: 'sandwich.svg',
       cat: 'menu',
-      number: 0,
+      number: 1,
   },
   {
       id: 2,
@@ -19,7 +19,7 @@ export const foods: Food[] =
       price: 5,
       icon: 'birthday-cake.svg',
       cat: 'menu',
-      number: 0,
+      number: 1,
   },
   {
       id: 3,
@@ -28,7 +28,7 @@ export const foods: Food[] =
       price: 4.2,
       icon: 'burger.svg',
       cat: 'menu',
-      number: 0,
+      number: 1,
   },
   {
       id: 4,
@@ -37,7 +37,7 @@ export const foods: Food[] =
       price: 2,
       icon: 'burger.svg',
       cat: 'menu',
-      number: 0,
+      number: 1,
   },
   {
       id: 5,
@@ -64,7 +64,7 @@ export const foods: Food[] =
       price: 4.5,
       icon: 'burger.svg',
       cat: 'product',
-      number: 0,
+      number: 1,
   },
   {
       id: 8,
@@ -73,7 +73,7 @@ export const foods: Food[] =
       price: 5,
       icon: 'hot-dog.svg',
       cat: 'product',
-      number: 0,
+      number: 1,
   },
   {
       id: 9,
@@ -82,7 +82,7 @@ export const foods: Food[] =
       price: 4.2,
       icon: 'pizza.svg',
       cat: 'product',
-      number: 0,
+      number: 1,
   },
   {
       id: 10,
@@ -91,7 +91,7 @@ export const foods: Food[] =
       price: 2,
       icon: 'chicken-leg.svg',
       cat: 'menu',
-      number: 0,
+      number: 1,
   },
   {
       id: 11,
@@ -100,7 +100,7 @@ export const foods: Food[] =
       price: 4,
       icon: 'birthday-cake.svg',
       cat: 'product',
-      number: 0,
+      number: 1,
   },
   {
       id: 12,
@@ -109,6 +109,6 @@ export const foods: Food[] =
       price: 4,
       icon: 'roast-chicken.svg',
       cat: 'product',
-      number: 0,
+      number: 1,
   }
 ];

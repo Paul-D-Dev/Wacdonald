@@ -3,10 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { SidebarComponent } from './pages/sidebar/sidebar.component';
 import { CardMenuComponent } from './components/card-menu/card-menu.component';
 import { CardProductComponent } from './components/card-product/card-product.component';
 import { CartComponent } from './components/cart/cart.component';
+import { ContainerComponent } from './pages/container/container.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { CartComponent } from './components/cart/cart.component';
     CardMenuComponent,
     CardProductComponent,
     CartComponent,
+    ContainerComponent,
   ],
   imports: [
     BrowserModule,
