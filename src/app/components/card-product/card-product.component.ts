@@ -27,6 +27,7 @@ export class CardProductComponent implements OnInit {
       productCart.number ++;
     } else {
       this.cartServ.push(product);
+
     }
   }
 }

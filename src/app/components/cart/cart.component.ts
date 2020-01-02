@@ -9,20 +9,19 @@ import { CartService } from '../../services/cart.service';
 })
 export class CartComponent implements OnInit {
 
-  cart: Food[];
+  cart: Food[] = this.cartService.cart;
 
   constructor(private cartService: CartService) { }
 
   ngOnInit() {
-    this.cart = this.cartService.cart;
   }
 
   minusProduct(product, i) {
-    if (this.cart[i].number > 0) {
+    if (this.cart[i].number > 1) {
       this.totalOrder();
       return this.cart[i].number--;
-    } else if (this.cart[i].number === 0) {
-      return this.cart.splice(this.cart.findIndex(() => product.id === this.cart[i].id ), 1);
+    } else if (this.cart[i].number === 1) {
+      return this.cart.splice(i, 1);
     }
 
   }
