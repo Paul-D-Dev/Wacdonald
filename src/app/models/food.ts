@@ -5,5 +5,6 @@ export class Food {
   price: number;
   icon: string;
   cat: string;
+  menu?: number[];
   number: number;
 }

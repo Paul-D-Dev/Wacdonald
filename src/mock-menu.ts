@@ -64,6 +64,7 @@ export const foods: Food[] =
       price: 4.5,
       icon: 'burger.svg',
       cat: 'product',
+      menu: [1, 2],
       number: 1,
   },
   {
@@ -73,6 +74,7 @@ export const foods: Food[] =
       price: 5,
       icon: 'hot-dog.svg',
       cat: 'product',
+      menu: [6],
       number: 1,
   },
   {
