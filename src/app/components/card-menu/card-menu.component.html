@@ -7,6 +7,6 @@
   <div class="menu" *ngFor="let menu of menus">
     <img [src]="'../../../assets/icons/' + menu.icon" alt="food">
     <p>{{menu.name}}</p>
-    <p class="promo">{{menu.promo}}</p>
+    <p class="promo" *ngIf="menu.promo">{{menu.promo}}</p>
   </div>
 </div>

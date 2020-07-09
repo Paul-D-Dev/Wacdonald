@@ -15,7 +15,7 @@ export const foods: Food[] =
   {
       id: 2,
       name: 'Burgers & Sandiches',
-      promo: null,
+      promo: '',
       price: 5,
       icon: 'birthday-cake.svg',
       cat: 'menu',
@@ -24,7 +24,7 @@ export const foods: Food[] =
   {
       id: 3,
       name: 'Happy Meal',
-      promo: null,
+      promo: '',
       price: 4.2,
       icon: 'burger.svg',
       cat: 'menu',
@@ -33,7 +33,7 @@ export const foods: Food[] =
   {
       id: 4,
       name: 'Beverages',
-      promo: null,
+      promo: '',
       price: 2,
       icon: 'burger.svg',
       cat: 'menu',
@@ -42,7 +42,7 @@ export const foods: Food[] =
   {
       id: 5,
       name: 'Chicken',
-      promo: null,
+      promo: '',
       price: 4,
       icon: 'chicken-leg.svg',
       cat: 'menu',
@@ -51,7 +51,7 @@ export const foods: Food[] =
   {
       id: 6,
       name: 'Snack & Sides',
-      promo: null,
+      promo: '',
       price: 4,
       icon: 'chicken-leg.svg',
       cat: 'menu',
@@ -69,7 +69,7 @@ export const foods: Food[] =
   {
       id: 8,
       name: 'Quarter Pounder',
-      promo: null,
+      promo: '',
       price: 5,
       icon: 'hot-dog.svg',
       cat: 'product',
@@ -78,7 +78,7 @@ export const foods: Food[] =
   {
       id: 9,
       name: 'Cheeseburger',
-      promo: null,
+      promo: '',
       price: 4.2,
       icon: 'pizza.svg',
       cat: 'product',
@@ -87,7 +87,7 @@ export const foods: Food[] =
   {
       id: 10,
       name: 'Crispy Chicken',
-      promo: null,
+      promo: '',
       price: 2,
       icon: 'chicken-leg.svg',
       cat: 'menu',
@@ -96,7 +96,7 @@ export const foods: Food[] =
   {
       id: 11,
       name: 'Sausage sausage',
-      promo: null,
+      promo: '',
       price: 4,
       icon: 'birthday-cake.svg',
       cat: 'product',
@@ -105,7 +105,7 @@ export const foods: Food[] =
   {
       id: 12,
       name: 'Filet-o-Fish',
-      promo: null,
+      promo: '',
       price: 4,
       icon: 'roast-chicken.svg',
       cat: 'product',
